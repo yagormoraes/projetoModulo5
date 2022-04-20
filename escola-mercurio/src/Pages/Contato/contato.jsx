@@ -2,6 +2,7 @@ import React from 'react'
 
 function Contato() {
     return(
+
         <form action="https://formsubmit.co/yago.dmoraes@gmail.com" method='POST'>
             <h1>Formulario Teste - Contato</h1>
             <label htmlFor="text1">Label de Teste1</label>
