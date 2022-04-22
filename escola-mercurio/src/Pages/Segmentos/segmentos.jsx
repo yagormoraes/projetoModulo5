@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../../Components/Footer'
 import Header from '../../Components/Header'
 
 function Segmentos (){
@@ -27,7 +28,7 @@ function Segmentos (){
              Com o objetivo de preparar os alunos para as provas de ingresso no Ensino Superior mais importantes do país, desenvolvemos diferentes metodologias, projetos e simulados. Além disso, temos um Coordenador de Vestibular que acompanha os estudantes ao longo do ano e os auxilia nos estudos e preparação para o Enem e vestibulares.
              </p>
          </div>
-        
+        <Footer/>
         </>
     )
 }
