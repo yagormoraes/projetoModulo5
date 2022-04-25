@@ -33,12 +33,16 @@ function Header(){
         :hover{
             color:green;
         }
+        :focus{
+            color:red;
+        }
     `
 
     return(
         <Header>    
             <h1>Escola Mercúrio</h1>
             <UL>
+                <li><StyledLink to='/' >Home</StyledLink></li>
                 <li><StyledLink to='/sobre' >Sobre Nós</StyledLink></li>
                 <li><StyledLink to='/segmentos'>Segmentos</StyledLink></li>
                 <li><StyledLink to='/professor'>Pagina do Professor</StyledLink></li>

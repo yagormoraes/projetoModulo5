@@ -67,7 +67,6 @@ function Formulario() {
     }
     `
 
-
     return(
         <>
         <Form action="https://formsubmit.co/yago.dmoraes@gmail.com" method='POST'>
@@ -76,16 +75,17 @@ function Formulario() {
             </TextDiv>
             <Section>
                 <label htmlFor="nome">Nome:</label>
-                <Input type="text" name='nome' id='nome' placeholder='Insira seu nome.' required/>
+                <Input 
+                type="text" name='nome' id='nome' placeholder='Insira seu nome.' required/>
                 
                 <label htmlFor="email">Email:</label>
-                <Input type="email" name='email' id='email' placeholder='Insira seu email.'required/>
+                <Input type="email" name='email' id='email' placeholder='Insira seu email.' required/>
 
                 <label htmlFor="assunto">Assunto:</label>
-                <Input type="text" name='assunto' id='assunto' placeholder='Sobre qual assunto gostaria de tratar?' required/>
+                <Input type="text" name='assunto' id='assunto' placeholder='Sobre qual assunto gostaria de tratar?'required/>
 
                 <label htmlFor="msg">Mensagem:</label>
-                <TextArea type="text" name='msg' id='msg' placeholder='Insira seu mensagem.' required/>
+                <TextArea type="text" name='msg' id='msg' placeholder='Insira seu mensagem.'required/>
 
                 <Button type="submit">Envie</Button>
             </Section>
