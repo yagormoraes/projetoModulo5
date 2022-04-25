@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import {Link} from 'react-router-dom'
 
 
 function Header(){
@@ -23,14 +24,29 @@ function Header(){
         gap: 15px;
     `
 
+    const StyledLink = styled(Link)`
+        text-decoration:none;
+
+        :visited{
+            color:black;
+        }
+        :hover{
+            color:green;
+        }
+        :focus{
+            color:red;
+        }
+    `
+
     return(
         <Header>    
             <h1>Escola Mercúrio</h1>
             <UL>
-                <li>Sobre Nós</li>
-                <li>Segmentos</li>
-                <li>Pagina do Professor</li>
-                <li>Contato</li>
+                <li><StyledLink to='/' >Home</StyledLink></li>
+                <li><StyledLink to='/sobre' >Sobre Nós</StyledLink></li>
+                <li><StyledLink to='/segmentos'>Segmentos</StyledLink></li>
+                <li><StyledLink to='/professor'>Pagina do Professor</StyledLink></li>
+                <li><StyledLink to='/contato'>Contato</StyledLink></li>
             </UL>
         </Header>
     )
