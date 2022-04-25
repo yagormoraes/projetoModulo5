@@ -24,14 +24,25 @@ function Header(){
         gap: 15px;
     `
 
+    const StyledLink = styled(Link)`
+        text-decoration:none;
+
+        :visited{
+            color:black;
+        }
+        :hover{
+            color:green;
+        }
+    `
+
     return(
         <Header>    
             <h1>Escola Mercúrio</h1>
             <UL>
-                <li><Link to='/sobre'>Sobre Nós</Link></li>
-                <li><Link to='/segmentos'>Segmentos</Link></li>
-                <li><Link to='/professor'>Pagina do Professor</Link></li>
-                <li><Link to='/contato'>Contato</Link></li>
+                <li><StyledLink to='/sobre' >Sobre Nós</StyledLink></li>
+                <li><StyledLink to='/segmentos'>Segmentos</StyledLink></li>
+                <li><StyledLink to='/professor'>Pagina do Professor</StyledLink></li>
+                <li><StyledLink to='/contato'>Contato</StyledLink></li>
             </UL>
         </Header>
     )
