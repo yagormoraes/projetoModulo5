@@ -36,3 +36,20 @@
     transform: rotate(360deg);
   }
 }
+
+.fundo{
+  background-color: #F2A03D;
+}
+
+.img{
+  width: 100%;
+  height:60%;
+}
+
+.titulo{
+  background-color: #03a696;
+  color: #F0F1F2;
+  border-radius: 15px;
+  padding: 10px;
+
+}
