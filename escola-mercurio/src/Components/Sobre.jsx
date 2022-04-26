@@ -1,15 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Sobre = ({conteudo}) => {
+const Sobre = ({conteudo,img}) => {
     const Container = styled.p`
         display:flex;
         align-items:center;
         justify-content:center;
 
-        :nth-child(odd){
-            background-color:blue;
-        }
     `
 
     const Content = styled.p`
@@ -22,17 +19,9 @@ const Sobre = ({conteudo}) => {
     `
 
 
-    const Box = styled.p`
-        width:400px;
-        height:300px;
-        background-color:red;
-
-    `
-
-
   return (
       <Container>
-        <Box></Box>
+        <img src={img} alt="" width={400} height={300}/>
         <Content>{conteudo}</Content>
       </Container>
     
