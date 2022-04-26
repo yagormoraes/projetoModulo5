@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import hermes from '../Assets/hermes.png'
 import {Link} from 'react-router-dom'
 
 
@@ -13,6 +14,11 @@ function Header(){
         align-items:center;
         justify-content: space-around;
         font-family: 'Source Sans Pro', sans-serif;
+    `
+
+    const Logo = styled.div`
+        display:flex;
+        align-items:center;
     `
 
     const UL = styled.ul`
@@ -39,8 +45,13 @@ function Header(){
     `
 
     return(
-        <Header>    
-            <h1>Escola Mercúrio</h1>
+        <Header>
+            <Logo>
+                <img src={hermes} alt="" width={100} height={100}/>
+                <h1>Escola Mercúrio</h1>
+                
+            </Logo>    
+            
             <UL>
                 <li><StyledLink to='/' >Home</StyledLink></li>
                 <li><StyledLink to='/sobre' >Sobre Nós</StyledLink></li>

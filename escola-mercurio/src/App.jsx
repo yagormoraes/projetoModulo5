@@ -6,6 +6,7 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Contato from './Pages/Contato/contato';
 import Segmentos from './Pages/Segmentos/segmentos';
+import SobrePag from './Pages/Sobre/SobrePag';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path='/segmentos' element={<Segmentos />} />
           <Route path='/contato' element={<Contato />} />
+          <Route path='/sobre' element={<SobrePag />} />
         </Routes>
       </Router>
       <Footer></Footer>
