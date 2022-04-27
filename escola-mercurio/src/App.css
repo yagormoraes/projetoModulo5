@@ -46,11 +46,6 @@
   height:60%;
 }
 
-.img2 {
-  width: 100%;
-  height: 5%;
-}
-
 .titulo{
   background-color: #03a696;
   color: #F0F1F2;
@@ -59,11 +54,6 @@
 
 }
 
-#section {
-  height: 10px;
-}
-
-#main {
-  width: 100%;
-  height: 500px;
+.imagem-carrossel {
+  height: 400px;
 }
