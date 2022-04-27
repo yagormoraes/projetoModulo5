@@ -8,6 +8,7 @@ import Footer from './Components/Footer';
 import Contato from './Pages/Contato/contato';
 import Segmentos from './Pages/Segmentos/segmentos';
 import SobrePag from './Pages/Sobre/SobrePag';
+import Home from './Pages/Home/home';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Router>
         <Header></Header>
         <Routes>
+          <Route path='/' element={<Home />} />
           <Route path='/segmentos' element={<Segmentos />} />
           <Route path='/contato' element={<Contato />} />
           <Route path='/sobre' element={<SobrePag />} />
