@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/alt-text */
+
 import React from 'react'
 import Vestibular from '../../Components/image/05_geha_blog_impacto_horario_escolar.jpg'
 import Medio from '../../Components/image/Escola-4.0-1-800x533.jpg'
