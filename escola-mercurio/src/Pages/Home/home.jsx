@@ -1,6 +1,8 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
-import Formatura from '../../Assets/agenda.png';
+import Matricula from '../../Assets/matricula.png';
+import Curso from '../../Assets/curso.png';
+import Enem from '../../Assets/enem.png';
 import { Row } from 'react-bootstrap';
 import { Card } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
@@ -16,37 +18,25 @@ function Home () {
                 <Carousel.Item>
                     <img
                         className="d-block w-100 imagem-carrossel"
-                        src={Formatura}
-                        alt="Jovens em sua formatura"
+                        src={Matricula}
+                        alt="Imagem informando que matrículas estão abertas"
                     />
-                    <Carousel.Caption>
-                    <h3>35ª Formatura na Escola Mercúrio</h3>
-                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                    </Carousel.Caption>
                 </Carousel.Item>
 
                 <Carousel.Item>
                     <img
                         className="d-block w-100 imagem-carrossel"
-                        src={Formatura}
-                        alt="Jovens em sua formatura"
+                        src={Curso}
+                        alt="Jovens em curso técnico"
                     />
-                    <Carousel.Caption>
-                        <h3>35ª Formatura na Escola Mercúrio</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </Carousel.Caption>
                     </Carousel.Item>
 
                 <Carousel.Item>
                     <img
                         className="d-block w-100 imagem-carrossel"
-                        src={Formatura}
+                        src={Enem}
                         alt="Jovens em sua formatura"
                     />
-                    <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                    </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>
         </section>
