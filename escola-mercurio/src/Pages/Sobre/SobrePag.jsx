@@ -5,6 +5,8 @@ import colegioLivraria from '../../Assets/colegioLivraria.jpg'
 import colegioCriancas from '../../Assets/colegioCriancas.jpg'
 
 function SobrePag() {
+
+
   return (
     <>
         <Sobre conteudo="Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
