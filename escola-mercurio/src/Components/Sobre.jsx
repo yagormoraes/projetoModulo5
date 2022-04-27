@@ -16,7 +16,6 @@ const Sobre = ({conteudo,img}) => {
         width:400px;
         height:300px;
         margin:0;
-        border:2px solid black;
         display:flex;
         align-items:center;
         text-align:center;
@@ -28,8 +27,8 @@ const Sobre = ({conteudo,img}) => {
       justify-content:center;
       border:2px solid black;
       column-gap:50px;
-      width:1000px;
-      height:500px;
+      width:900px;
+      height:400px;
 
     `
 

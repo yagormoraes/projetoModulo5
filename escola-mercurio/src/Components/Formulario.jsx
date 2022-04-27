@@ -9,7 +9,7 @@ function Formulario() {
     align-items:center;
     justify-content:center;
     border: 2px solid black;
-    width: 700px;
+    width: 800px;
     `
 
     const Section = styled.section`
@@ -23,12 +23,7 @@ function Formulario() {
     `
 
     const TextDiv = styled.div`
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    align-self:center;
-    margin-top:10px;
-    width:300px;
+    padding:50px 0;
     `
     const Input = styled.input`
     width:400px;
