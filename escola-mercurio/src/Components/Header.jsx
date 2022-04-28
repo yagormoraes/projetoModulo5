@@ -31,16 +31,24 @@ function Header(){
     `
 
     const StyledLink = styled(Link)`
+        padding: 5px;
         text-decoration:none;
 
         :visited{
             color:black;
         }
         :hover{
+            background-color:pink;
+            border-radius:4px;
+            transition: 0.2s ease-in;
+            box-shadow: 5px 5px;
             color:green;
         }
         :focus{
-            color:red;
+            background-color:pink;
+            border-radius:4px;
+            box-shadow: 5px 5px;
+            color:green;
         }
     `
 
