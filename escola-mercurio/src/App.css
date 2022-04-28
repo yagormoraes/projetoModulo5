@@ -58,6 +58,14 @@
   height: 400px;
 }
 
-#section {
-  margin: 20px;
+.card-img-top {
+  object-fit: cover;
+}
+
+.card-menu {
+  padding: 30px;
+}
+
+.table-menu {
+  margin: 50px;
 }

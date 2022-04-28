@@ -3,11 +3,14 @@ import { Carousel } from 'react-bootstrap';
 import Matricula from '../../Assets/matricula.png';
 import Curso from '../../Assets/curso.png';
 import Enem from '../../Assets/enem.png';
-import { Row } from 'react-bootstrap';
+import Jogos from '../../Assets/jogos-escolares.png';
+import Ciencias from '../../Assets/ciencias.png';
+import Livros from '../../Assets/livro.png';
 import { Card } from 'react-bootstrap';
-import { Col } from 'react-bootstrap';
 import { Table } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
+import { CardGroup } from 'react-bootstrap';
+
 
 
 function Home () {
@@ -43,26 +46,45 @@ function Home () {
         <div>
             <p> </p>
         </div>
-        <Row xs={1} md={2} className="g-4">
-        {Array.from({ length: 4 }).map((_, idx) => (
-            <Col>
-                <Card>
-                    <Card.Img variant="top" src="holder.js/100px160" />
+        <div className='card-img'>
+            <CardGroup>
+                <Card className='card-menu'>
+                    <Card.Img variant="top" src={Jogos} />
                     <Card.Body>
-                    <Card.Title>Card title</Card.Title>
-                        <Card.Text>
-                            This is a longer card with supporting text below as a natural
-                            lead-in to additional content. This content is a little bit longer.
-                        </Card.Text>
+                    <Card.Title>Premiação dos Jogos Escolares 2022</Card.Title>
+                    <Card.Text>
+                        This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.
+                    </Card.Text>
                     </Card.Body>
                 </Card>
-            </Col>
-            ))}
-        </Row>
+            <Card className='card-menu'>
+                <Card.Img variant="top" src={Ciencias} />
+                <Card.Body>
+                <Card.Title>Concurso de Química Tecnológica</Card.Title>
+                <Card.Text>
+                    This card has supporting text below as a natural lead-in to additional
+                    content.{' '}
+                </Card.Text>
+                </Card.Body>
+            </Card>
+            <Card className='card-menu'>
+                <Card.Img variant="top" src={Livros} />
+                <Card.Body>
+                <Card.Title>Novos grupos do Clube do Livro</Card.Title>
+                <Card.Text>
+                    This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This card has even longer content than the first to
+                    show that equal height action.
+                </Card.Text>
+                </Card.Body>
+            </Card>
+            </CardGroup>
+        </div>
         <div>
             <p> </p>
         </div>
-        <Table striped bordered hover>
+        <Table className='table-menu' striped bordered hover>
             <thead>
                 <tr>
                 <th>#</th>
