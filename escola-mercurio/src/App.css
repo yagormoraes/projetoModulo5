@@ -36,14 +36,18 @@
     transform: rotate(360deg);
   }
 }
-
-.fundo{
-  background-color: #F2A03D;
+.area{
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+  box-sizing: content-box;
+  
 }
 
 .img{
-  width: 100%;
-  height:60%;
+  width: 500px;
+  height: 300px;
+  
 }
 
 .titulo{
@@ -51,7 +55,16 @@
   color: #F0F1F2;
   border-radius: 15px;
   padding: 10px;
+  margin: 20px;
 
+}
+
+.texto{
+   font-size: large;
+   font-weight: bolder;
+   align-items: flex-end;
+   margin-left: 50px;
+  
 }
 
 .imagem-carrossel {
@@ -68,4 +81,19 @@
 
 .table-menu {
   margin: 50px;
+}
+.block-with-text {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.2em;
+  max-height: 18em; 
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+}
+.block-with-text:before {
+  content: '...';
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
