@@ -1,0 +1,32 @@
+.container{
+    margin-top: 200px;
+  }
+  .texto{
+    font-size: 15px;
+    font-weight: bolder;
+    align-items: flex-end;
+    margin-left: 50px;
+   
+ }
+ .area{
+    display: flex;
+    justify-content: center;
+    padding: 60px;
+    box-sizing: content-box;
+    
+  }
+  
+  .img{
+    width: 500px;
+    height: 300px;
+    
+  }
+  
+  .titulo{
+    background-color: #03a696;
+    color: #F0F1F2;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 20px;
+  
+  }

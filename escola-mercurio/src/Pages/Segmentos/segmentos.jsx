@@ -1,34 +1,38 @@
 
-import React from 'react'
+import React, { useEffect }from 'react'
 import Vestibular from '../../Assets/vestibular.jpg'
 import Medio from '../../Assets/medio.jpg'
 import Fundamental from '../../Assets/fundamental.png'
+import Aos from 'aos'
+import "aos/dist/aos.css"
+import '../Segmentos/segmentos.css'
 
 
 
 function Segmentos (){
    
- 
-   
+
+    useEffect(()=>{
+        Aos.init({duration:3000})
+      },[])  
    
     return (
 
-        <div className='fundo'>
+        <div >
        
-         <div className="container mt-5 ">
+         <div className="container  " data-aos="fade-right">
                 <h1 className='titulo'>
                     Metodologia - Fundamental ( I e II )
                 </h1>
              <div className='area '>
                 <img className='mt-5 img' src={Fundamental} alt="crianças na creche"/>
-                <p  className='mt-5  texto' >
+                <p  className='mt-5  texto ' >
                 Princípios como o diálogo, a colaboração, o pensamento crítico, a criatividade e a pesquisa estão na base do trabalho desenvolvido no Ensino Fundamental I. Nesse segmento, diferentes metodologias e estratégias de ensino são usadas para ampliar o repertório dos alunos e desenvolver diversas habilidades e competências.
-                Desde pequenos, nossos alunos são incentivados a construírem a própria autonomia e a exercerem a autoria de suas produções. Em diferentes ambientes, alunos e professores altamente qualificados protagonizam uma aprendizagem ativa e significativa, em diálogo com a cultura, com o conhecimento científico e a tecnologia.
-                Desenvolvemos uma educação de alto nível a partir das transformações da sociedade com o ensino teórico e prático para o aluno se desenvolver através de sua própria vivência. O Ensino Fundamental II acompanha os alunos em uma fase de mudanças, com singularidades, formações identitárias e culturais próprias e desenvolvimento das responsabilidades. Por isso, são demandadas práticas escolares diferenciadas, capazes de contemplar as necessidades de cada um e diferentes modos de inserção social
+                Desde pequenos, nossos alunos são incentivados a construírem a própria autonomia e a exercerem a autoria de suas produções.Desenvolvemos uma educação de alto nível a partir das transformações da sociedade com o ensino teórico e prático para o aluno se desenvolver através de sua própria vivência. O Ensino Fundamental II acompanha os alunos em uma fase de mudanças, com singularidades, formações identitárias e culturais próprias e desenvolvimento das responsabilidades.
                 </p>
              </div>
         </div>
-        <div className="container mt-5">
+        <div className="container " data-aos="fade-left" >
              <h1 className='titulo'>
                  Metodologia - Ensino Medio
              </h1>
@@ -39,7 +43,7 @@ function Segmentos (){
              </p>
             </div>
         </div>
-        <div className="container mt-5">
+        <div className="container " data-aos="fade-right" >
              <h1 className='titulo'>
                  Metodologia - Vestibular
              </h1>
