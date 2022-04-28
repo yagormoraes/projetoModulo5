@@ -36,34 +36,3 @@
     transform: rotate(360deg);
   }
 }
-.imagem-carrossel {
-  height: 400px;
-}
-
-.card-img-top {
-  object-fit: cover;
-}
-
-.card-menu {
-  padding: 30px;
-}
-
-.table-menu {
-  margin: 50px;
-}
-
-.agenda {
-  margin: 0 150px 50px 150px;
-}
-
-.card-projeto {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: xx-large;
-  color: #03a696;
-  align-items: center;
-}
-
-.data-card {
-  width: 5px;
-  height: 50px;
-}

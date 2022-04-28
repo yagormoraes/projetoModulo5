@@ -1,4 +1,5 @@
 import React from 'react';
+import '../Home/home.css'
 import { Carousel } from 'react-bootstrap';
 import Matricula from '../../Assets/matricula.png';
 import Curso from '../../Assets/curso.png';
@@ -6,10 +7,12 @@ import Enem from '../../Assets/enem.png';
 import Jogos from '../../Assets/jogos-escolares.png';
 import Ciencias from '../../Assets/ciencias.png';
 import Livros from '../../Assets/livro.png';
+import Cronograma from '../../Assets/eventos.png'
 import { Card } from 'react-bootstrap';
 import { Table } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { CardGroup } from 'react-bootstrap';
+
 
 
 
@@ -91,7 +94,12 @@ function Home () {
         <Card className='card-projeto'>
             <Card.Body>Cronograma e Eventos</Card.Body>
         </Card>
+        
         <div className='agenda'>
+        <Card.Img className='cronograma' variant="top" src={Cronograma} />
+        <div>
+            <p></p>
+        </div>
         <Table striped bordered hover>
             <thead>
                 <tr>
@@ -102,7 +110,7 @@ function Home () {
             </thead>
             <tbody>
                 <tr>
-                <td>29/04/2022</td>
+                <td className='teste'>29/04/2022</td>
                 <td>Mês especial do Clube do Livro!</td>
                 <td>Já garantiu o seu? Confira os livros récem-chegados no nosso Clube do Livro. </td>
                 </tr>
@@ -127,15 +135,13 @@ function Home () {
             </p>
         </div>
         <Card className="text-center">
-            <Card.Header>Featured</Card.Header>
                 <Card.Body>
-                <Card.Title>Special title treatment</Card.Title>
+                <Card.Title>Você tem interesse se matricular na escola Mercúrio?</Card.Title>
                     <Card.Text>
-                        With supporting text below as a natural lead-in to additional content.
+                        Por favor, deixe seus dados que entraremos em contato o mais breve possível!
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Button variant="primary">FORMULÁRIO DE INTERESSE</Button>
                 </Card.Body>
-            <Card.Footer className="text-muted">2 days ago</Card.Footer>
         </Card>
         </>
     );
