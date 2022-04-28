@@ -46,6 +46,9 @@ function Home () {
         <div>
             <p> </p>
         </div>
+        <Card className='card-projeto'>
+            <Card.Body>Projetos em Andamento</Card.Body>
+        </Card>
         <div className='card-img'>
             <CardGroup>
                 <Card className='card-menu'>
@@ -84,35 +87,40 @@ function Home () {
         <div>
             <p> </p>
         </div>
-        <Table className='table-menu' striped bordered hover>
+
+        <Card className='card-projeto'>
+            <Card.Body>Cronograma e Eventos</Card.Body>
+        </Card>
+        <div className='agenda'>
+        <Table striped bordered hover>
             <thead>
                 <tr>
-                <th>#</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Username</th>
+                <th>Data</th>
+                <th>Evento</th>
+                <th>Importante</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                <td>1</td>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
+                <td>29/04/2022</td>
+                <td>Mês especial do Clube do Livro!</td>
+                <td>Já garantiu o seu? Confira os livros récem-chegados no nosso Clube do Livro. </td>
                 </tr>
                 <tr>
-                <td>2</td>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
+                <td>01/05/2022</td>
+                <td>Simulado Enem – 1ª fase</td>
+                <td>Para participar do Simulado Enem, é necessário<br>
+                </br>inscrever-se gratuitamente até o dia 30/04/2022.</td>
                 </tr>
                 <tr>
-                <td>3</td>
-                <td colSpan={2}>Larry the Bird</td>
-                <td>@twitter</td>
+                <td>12/05/2022</td>
+                <td>Formatura da décima primeira turma</td>
+                <td>Depois de seis meses, a turma 11 irá se formar! Fique de olho e marque em sua agenda.</td>
                 </tr>
+    
             </tbody>
-        </Table>    
+        </Table>  
+        </div>  
         <div>
             <p>
 
