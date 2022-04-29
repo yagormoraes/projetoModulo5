@@ -16,6 +16,7 @@ function Professor() {
 
     return (
         <div>
+        <h1>Lista de Alunos</h1>
         {values.map((aluno) => {
           //console.log("aluno", aluno);
             return (

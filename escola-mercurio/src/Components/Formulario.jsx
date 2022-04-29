@@ -8,8 +8,7 @@ function Formulario() {
     flex-direction:column;
     align-items:center;
     justify-content:center;
-    border: 2px solid black;
-    width: 800px;
+
     `
 
     const Section = styled.section`
@@ -54,8 +53,8 @@ function Formulario() {
     outline: none;
 
     :hover{
-        background-color: #2EE59D;
-        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+        background-color: #03A696;
+        box-shadow: 0px 15px 20px #FFC155;
         color: #fff;
         border: 2px solid #0B6116;
         transform: translateY(-7px);
