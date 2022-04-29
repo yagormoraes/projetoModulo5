@@ -36,7 +36,11 @@
     height: 50px;
   }
 
-  td {
+  .text-center {
       padding: 30px;
+  }
+
+  .table-espaco {
+    padding: 30px;
   }
 
