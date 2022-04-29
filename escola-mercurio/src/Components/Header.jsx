@@ -38,17 +38,17 @@ function Header(){
             color:black;
         }
         :hover{
-            background-color:pink;
+            background-color:#03A696;
             border-radius:4px;
             transition: 0.2s ease-in;
             box-shadow: 5px 5px;
-            color:green;
+            color:#593202;
         }
         :focus{
-            background-color:pink;
+            background-color:#03A696;
             border-radius:4px;
             box-shadow: 5px 5px;
-            color:green;
+            color:#593202;
         }
     `
 
