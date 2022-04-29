@@ -2,16 +2,20 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Container } from "./listaSeriesStyled.jsx";
 
-function listaSeries({ id, nome, img, turma, matricula, data_de_nascimento}) {
+function ListaSeries({ id, nome, turma, matricula, data_de_nascimento, ano, responsavel ,bairro ,cidade}) {
   return (
     // Criamos uma estilização com styled feita em arquivo separado e chamada aqui como Container
     <Container>
       <Link to={"/visualizar/" + id}>
-          <img src={img} alt="" />
           <p>{nome}</p>
           <p>{turma}</p>
           <p>{matricula}</p>
-          <p>{data_de_nascimento}</p>
+          <p>{ano}</p>
+          <p>{responsavel}</p>
+          <p>{bairro}</p>
+          <p>{cidade}</p>
+          
+
           {/* usando Link */}
       </Link>
       {/* <Button nome="Deletar" click={handleDelete} /> */}
@@ -19,4 +23,4 @@ function listaSeries({ id, nome, img, turma, matricula, data_de_nascimento}) {
   );
 }
 
-export default listaSeries
+export default ListaSeries
