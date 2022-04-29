@@ -5,12 +5,14 @@ import {api} from "../../Services/API.js";
 function Professor() {
     const [values, setValues] = useState([]);
     useEffect(() => {
-        api.get()
+        api
+        .get("")
         .then((response)=>{
             setValues(response.data.alunos)
-            console.log(response.data.alunos)})
+            //console.log(response.data.alunos)
+        })
         .catch((e)=>console.log(e))
-    },[])
+    },[values])
 
     return (
         <div>
