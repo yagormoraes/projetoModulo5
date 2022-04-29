@@ -110,7 +110,7 @@ function Home () {
             </thead>
             <tbody>
                 <tr>
-                <td className='teste'>29/04/2022</td>
+                <td>29/04/2022</td>
                 <td>Mês especial do Clube do Livro!</td>
                 <td>Já garantiu o seu? Confira os livros récem-chegados no nosso Clube do Livro. </td>
                 </tr>
@@ -125,7 +125,6 @@ function Home () {
                 <td>Formatura da décima primeira turma</td>
                 <td>Depois de seis meses, a turma 11 irá se formar! Fique de olho e marque em sua agenda.</td>
                 </tr>
-    
             </tbody>
         </Table>  
         </div>  
