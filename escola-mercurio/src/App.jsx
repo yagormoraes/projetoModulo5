@@ -4,12 +4,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
-import Header from './Components/Header';
-import Footer from './Components/Footer';
-import Contato from './Pages/Contato/contato';
-import Segmentos from './Pages/Segmentos/segmentos';
-import SobrePag from './Pages/Sobre/SobrePag';
-import Home from './Pages/Home/home';
+import Header from './Components/Header.jsx';
+import Footer from './Components/Footer.jsx';
+import Contato from './Pages/Contato/contato.jsx';
+import Segmentos from './Pages/Segmentos/segmentos.jsx';
+import SobrePag from './Pages/Sobre/SobrePag.jsx';
+import Home from './Pages/Home/home.jsx';
+import Professor from './Pages/Professor/professor.jsx';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/segmentos' element={<Segmentos />} />
           <Route path='/contato' element={<Contato />} />
           <Route path='/sobre' element={<SobrePag />} />
+          <Route path='/professor' element={<Professor />} />
         </Routes>
       </Router>
       <Footer></Footer>
