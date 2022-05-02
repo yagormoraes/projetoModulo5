@@ -12,6 +12,7 @@ import SobrePag from './Pages/Sobre/SobrePag.jsx';
 import Home from './Pages/Home/home.jsx';
 import Professor from './Pages/Professor/professor.jsx';
 import Cadastro from './Pages/cadastro/Cadastro.jsx';
+import Visualizar from './Pages/VisualizarAlunos/VisualizarAluno';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path='/sobre' element={<SobrePag />} />
           <Route path='/professor' element={<Professor />} />
           <Route path='/cadastro' element={< Cadastro/>} />
+          <Route path='/visualizar/:idMatricula' element={<Visualizar/>}/>
         </Routes>
       </Router>
       <Footer></Footer>

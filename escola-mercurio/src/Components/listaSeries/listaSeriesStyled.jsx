@@ -9,10 +9,6 @@ export const Container = styled.div`
     font-size: 14px;
     margin: 0.5em;
   }
-  img {
-    width: 150px;
-    height: 150px;
-  }
   a {
     display: flex;
     flex-direction: column;

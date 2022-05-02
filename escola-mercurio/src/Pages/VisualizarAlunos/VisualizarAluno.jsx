@@ -1,34 +1,90 @@
-
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { alunosPorId } from "../../professor.js";
-import { Container } from "./VisualizarAlunosStyled.jsx";
+import { useParams, useNavigate} from "react-router-dom";
+import { api } from "../../Services/API.js";
 export default function Visualizar() {
-  const [aluno, setAluno] = useState([]);
-  const { id } = useParams();
-  console.log(id);
-  useEffect(() => {
-    alunosPorId
-      .get(`/lookup.php?i=${id}`)
-      .then((response) => {
-        setAluno(response.data.aluno[0]);
-        console.log("data", response.data.aluno[0]);
+
+  const nav = useNavigate()
+  const [aluno, setAluno] = useState([])
+  const {idMatricula} = useParams()
+  console.log("idMatricula:",idMatricula);
+
+  useEffect(()=>{
+    api
+      .get(`/matricula/${idMatricula}`)
+      .then((resp)=>{
+        setAluno(resp.data.alunos[0])
+        console.log("data:",resp.data.alunos[0]);
       })
-      .catch((erro) => console.log(erro));
-  }, [id]);
+      .catch(e => console.log(e))
+  },[idMatricula])
 
-  return (
-    //
 
-    //Um componente styled criadoem arquivo para estilizar todo o componente e, fazendo uma requisição get/:id para trazer o item quando clicado no botão de visualizar na página home, redirecionando para este componente.
-    <Container>
-      <h1>
-        <span>Aluno: </span> {aluno.strAluno}
-      </h1>
-      <img src={aluno.strAlunoThumb} alt="" />
-      <p>
-        <span>Dados: </span> {aluno.strInstructions}
-      </p>
-    </Container>
-  );
+  const handleDelete = () =>{
+    api.delete('/id/'+aluno.ID)
+    nav('/professor')
+  }
+
+  const handleUpdate = () =>{
+    api.put('/id/'+aluno.ID)
+    .then(resp=>console.log(resp.data))
+    
+  }
+
+
+  return(
+
+    <>
+        <div>
+          <h1>
+            <span>Aluno:</span> {aluno.NOME}
+          </h1>
+          <p>
+            <span>Matricula:</span>  {aluno.MATRICULA}
+          </p>
+          <p>
+            <span>Turma:</span> {aluno.TURMA}
+          </p>
+          <p>
+            <span>Email: </span> {aluno.EMAIL}
+          </p>
+          <p>
+            <span>Ano: </span> {aluno.ANO}
+          </p>
+          <p>
+            <span>Data de Nascimento: </span> {aluno.DATA_DE_NASCIMENTO}
+          </p>
+          <p>
+            <span>CPF: </span> {aluno.CPF}
+          </p>
+          <p>
+            <span>Telefone: </span> {aluno.TELEFONE}
+          </p>
+          <p>
+            <span>Responsável: </span> {aluno.RESPONSAVEL}
+          </p>
+          <p>
+            <span>Rua: </span> {aluno.RUA}
+          </p>
+          <p>
+            <span>Número: </span> {aluno.NUMERO}
+          </p>
+          <p>
+            <span>CEP: </span> {aluno.CEP}
+          </p>
+          <p>
+            <span>Cidade: </span> {aluno.CIDADE}
+          </p>
+          <p>
+            <span>Bairro: </span> {aluno.BAIRRO}
+          </p>
+        </div>
+
+        <button onClick={() => handleDelete()}>Deletar Aluno</button>
+        <button onClick={() => handleUpdate()} >Atualizar Aluno</button>
+    </>
+    
+
+  )
+
+
 }
