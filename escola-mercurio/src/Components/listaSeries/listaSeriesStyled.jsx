@@ -3,6 +3,9 @@ export const Container = styled.div`
   margin: 1em;
   display: flex;
   justify-content: center;
+  border: 2px solid black;
+  width:150px;
+  border-radius: 20px;
   p {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     text-align: center;
@@ -14,7 +17,6 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: balck;
     margin: 0.5em;
     padding: 0.5em;
     text-decoration: none;
