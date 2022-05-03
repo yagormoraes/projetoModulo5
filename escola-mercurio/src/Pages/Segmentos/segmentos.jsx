@@ -50,7 +50,7 @@ function Segmentos (){
              <div className='area '>
              <img className='mt-5 img' src={Vestibular} alt="cursinho para vestibular"/>
              <p  className='mt-5 texto'>
-             Com o objetivo de preparar os alunos para as provas de ingresso no Ensino Superior mais importantes do país, desenvolvemos diferentes metodologias, projetos e simulados. Além disso, temos um Coordenador de Vestibular que acompanha os estudantes ao longo do ano e os auxilia nos estudos e preparação para o Enem e vestibulares.
+             {/* Com o objetivo de preparar os alunos para as provas de ingresso no Ensino Superior mais importantes do país, desenvolvemos diferentes metodologias, projetos e simulados. Além disso, temos um Coordenador de Vestibular que acompanha os estudantes ao longo do ano e os auxilia nos estudos e preparação para o Enem e vestibulares. */}
              </p>
             </div>
          </div>
