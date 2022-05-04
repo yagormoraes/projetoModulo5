@@ -38,7 +38,7 @@ function Footer(){
         <>
         <Footer>
             <Logo></Logo>
-            {/* <Addresses>
+             <Addresses>
                 <Address>
                     <p>Endereço 1</p>
                     <p>XXXXXXXXX</p>
@@ -51,7 +51,7 @@ function Footer(){
                     <p>YYYYYYYYY</p>
                     <p>YYYYYYYYY</p>
                 </Address>
-            </Addresses> */}
+            </Addresses> 
             
         </Footer>
         <CopyrightText>Direitos Reservados ao Grupo 1 - T11 - M5 - Resilia Educação &copy;</CopyrightText>
