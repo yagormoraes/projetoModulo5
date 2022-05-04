@@ -12,7 +12,7 @@ import SobrePag from './Pages/Sobre/SobrePag.jsx';
 import Home from './Pages/Home/home.jsx';
 import Professor from './Pages/Professor/professor.jsx';
 import Cadastro from './Pages/cadastro/Cadastro.jsx';
-import Visualizar from './Pages/VisualizarAlunos/VisualizarAluno';
+import Visualizar from './Pages/VisualizarAlunos/VisualizarAluno.jsx';
 
 function App() {
   return (
