@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d0b76361.css",
+    "main.js": "/static/js/main.1940a238.js",
+    "static/media/livro.png": "/static/media/livro.919780abccd82ab6b89a.png",
+    "static/media/fundamental.png": "/static/media/fundamental.6f0e38c552af8e0acb16.png",
+    "static/media/colegioLivraria.jpg": "/static/media/colegioLivraria.269c8c9409353ee39122.jpg",
+    "static/media/hermes.png": "/static/media/hermes.64d0c01357e8c2ec0bf5.png",
+    "static/media/vestibular.jpg": "/static/media/vestibular.b680c113b5d76a84226c.jpg",
+    "static/media/jogos-escolares.png": "/static/media/jogos-escolares.f4ceae77671e2827d37a.png",
+    "static/media/colegio.jpg": "/static/media/colegio.b2dc520478c0c9b42e91.jpg",
+    "static/media/ciencias.png": "/static/media/ciencias.edca4100011958b8cfb4.png",
+    "static/media/eventos.png": "/static/media/eventos.07251b437f0e10577b28.png",
+    "static/media/medio.jpg": "/static/media/medio.1a4aed66f04ec357abb8.jpg",
+    "static/media/colegioCriancas.jpg": "/static/media/colegioCriancas.034f1242bbcbde5392b9.jpg",
+    "static/media/curso.png": "/static/media/curso.2f9f60440182ea909af6.png",
+    "static/media/matricula.png": "/static/media/matricula.2f488edef3dcd5ca4daa.png",
+    "static/media/enem.png": "/static/media/enem.864ba2a7b3ebc5b92747.png",
+    "index.html": "/index.html",
+    "main.d0b76361.css.map": "/static/css/main.d0b76361.css.map",
+    "main.1940a238.js.map": "/static/js/main.1940a238.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d0b76361.css",
+    "static/js/main.1940a238.js"
+  ]
+}
